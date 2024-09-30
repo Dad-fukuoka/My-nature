@@ -1,0 +1,274 @@
+$width: 1080;
+body {
+    margin: 0;
+    .wrap {
+        max-width: 750px;
+        width: 100%;
+        margin: 0 auto;
+        img {
+            max-width: 750px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            vertical-align: bottom;
+        }
+       .por {
+            position: relative;
+        }
+       .poa {
+            position: absolute;
+        }
+        
+        .btn {
+            width: 942% / $width * 100;
+            top: 10%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            animation: anime1 .7s ease infinite alternate;
+        }
+        @keyframes anime1 {
+            from {
+              transform: scale(0.9,0.9);
+            }
+            to {
+              transform: scale(1,1);
+            }
+          }
+          .img1 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img10 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img11 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img12 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img13 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img14 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img15 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img16 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img17 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img18 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img19 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img2 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img20 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img21 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img22 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img23 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img24 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img25 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img26 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img27 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img28 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img3 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img4 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img5 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img6 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img7 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img8 {
+            width: 1080% / $width * 100;
+          
+          }
+          .img9 {
+            width: 1080% / $width * 100;
+          
+          }
+        .radio-box {
+            left: 10%;
+            span {
+                font-size: 36px;
+                font-family: "游ゴシック体",sans-serif;
+                letter-spacing: .15em;
+                padding-left: .5em;
+                @media (max-width:750px) {
+                    font-size: 5vw;
+                }
+            }
+            .radio {
+                box-sizing: border-box;
+                width: 40px;
+                height: 40px;
+                @media (max-width:750px) {
+                    width: 5vw;
+                    height: 5vw;
+                }
+                &::before, &::after {
+                    box-sizing: border-box;
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    border: 1px solid #000;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #fff;
+                    @media (max-width:750px) {
+                        width: 5vw;
+                        height: 5vw;
+                    }
+                }
+                &::after {
+                    z-index: 10;
+                    content: '';
+                    display: none;
+                }
+                &:checked {
+                    &::after {
+                        content: '';
+                        background-image: url(../img/check.webp);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        display: block;
+                        width: 45px;
+                        height: 45px;
+                        position: absolute;
+                        top: 10%;
+                        left: 18%;
+                        @media (max-width:750px) {
+                            width: 6vw;
+                            height: 5vw;
+                        }
+                    }
+                }
+            }
+        }
+        .radio-box00 {
+            top: 16%;
+        }
+        .radio-box01 {
+            top: 44%;
+        }
+        .radio-box02 {
+            top: 16%;
+        }
+        .radio-box03 {
+            top: 49%;
+        }
+        
+        .checkbox {
+            left: 10%;
+            input {
+                position: relative;
+                width: 40px;
+                height: 40px;
+                border: 1px solid #000;
+                vertical-align: -5px;
+                appearance: none;
+                @media (max-width:750px) {
+                    width: 5vw;
+                    height: 5vw;
+                }
+                &:checked:before {
+                    content: '';
+                    background-image: url(../img/check.webp);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    display: block;
+                    width: 45px;
+                    height: 45px;
+                    top: 10%;
+                    left: 18%;
+                    @media (max-width:750px) {
+                        width: 6vw;
+                        height: 5vw;
+                    }
+                }
+            }
+            span {
+                font-size: 36px;
+                font-family: "游ゴシック体",sans-serif;
+                letter-spacing: .1em;
+                padding-left: .5em;
+                @media (max-width:750px) {
+                    font-size: 5vw;
+                }
+            }
+        }
+        .checkbox01 {
+            top: 8%;
+        }
+        .checkbox02 {
+            top: 20%;
+        }
+        .checkbox03 {
+            top: 43%;
+        }
+        .checkbox04 {
+            top: 65%;
+        }
+    }
+}

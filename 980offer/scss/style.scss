@@ -1,0 +1,94 @@
+$width: 1080;
+html {
+    scroll-behavior:smooth;
+    body {
+        margin: 0;
+        .wrap {
+            overflow: hidden;
+            max-width: 750px;
+            margin: 0 auto;
+            text-align: center;
+            .por {
+                position: relative;
+            }
+            .poa {
+                position: absolute;
+            }
+            .flex {
+                display: flex;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                vertical-align: bottom;
+            }
+            .btn1 {
+                width: 974% / $width * 100;
+                top: 84%;
+                left: 5%;
+                animation: anime1 .7s ease infinite alternate;
+              
+              }
+              .btn2 {
+                width: 974% / $width * 100;
+                top: 80.4%;
+                left: 5%;
+                animation: anime1 .7s ease infinite alternate;
+              
+              }
+              .btn3 {
+                width: 974% / $width * 100;
+                top: 75%;
+                left: 5%;
+                animation: anime1 .7s ease infinite alternate;
+              
+              }
+              @keyframes anime1 {
+                from {
+                  transform: scale(0.9,0.9);
+                }
+                to {
+                  transform: scale(1,1);
+                }
+              }
+              .img1 {
+                width: 1080% / $width * 100;
+              
+              }
+              .img2 {
+                width: 1080% / $width * 100;
+              
+              }
+              .img3 {
+                width: 1080% / $width * 100;
+              
+              }
+              .img4 {
+                width: 1080% / $width * 100;
+              
+              }
+              .img5 {
+                width: 1080% / $width * 100;
+              
+              }
+              .img6 {
+                width: 1080% / $width * 100;
+              
+              }
+              .img7 {
+                width: 1080% / $width * 100;
+              
+              }
+              .img8 {
+                width: 1080% / $width * 100;
+              
+              }
+              .img9 {
+                width: 1080% / $width * 100;
+              
+              }
+              
+  }
+ }
+}
