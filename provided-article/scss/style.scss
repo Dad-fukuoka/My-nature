@@ -11,6 +11,7 @@ body {
         padding: 15px;
         box-sizing: border-box;
         background-color: #fff;
+        font-family: sans-serif;
         img {
             max-width: 620px;
             width: 100%;
@@ -29,8 +30,30 @@ body {
             text-align: center;
             font-size: 17px;
             line-height: 1.8;
-
+            .comment {
+              font-size: 13px;
+              line-height: 1.5;
+              display: block;
+              margin-top: 5px;
+              text-align: left;
+            }
         }
+
+        .sb-custom {
+          #sb-part-2568 {
+            .downArrow {
+              span {
+                margin: 0 2%;
+                display: inline-block;
+                width: 60px;
+                height: 50px;
+                background: #005b81;
+                clip-path: polygon(0 35%, 25% 35%, 25% 0, 75% 0, 75% 35%, 100% 35%, 50% 100%);
+              }
+            }
+          }
+        }
+        
 
         #sb-part-5083.sb-custom-part-m4gts9sjm7em1ukob2g .arrowFlow__area {
             width: 100%;
@@ -314,5 +337,17 @@ body {
               transform: scale(1.09);
             }
           }
+
+        .dad-img {
+          img {
+            margin: 0 auto;
+          }
+          .bg-yellow {
+            background-color: yellow;
+            padding: 5px 10px;
+            color: rgb(228, 22, 91);
+            font-weight: 900;
+          }
+        }
     }
 }

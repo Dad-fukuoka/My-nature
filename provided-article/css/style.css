@@ -11,6 +11,7 @@ body .article-body {
   padding: 15px;
   box-sizing: border-box;
   background-color: #fff;
+  font-family: sans-serif;
 }
 body .article-body img {
   max-width: 620px;
@@ -29,6 +30,21 @@ body .article-body .text-contents {
   text-align: center;
   font-size: 17px;
   line-height: 1.8;
+}
+body .article-body .text-contents .comment {
+  font-size: 13px;
+  line-height: 1.5;
+  display: block;
+  margin-top: 5px;
+  text-align: left;
+}
+body .article-body .sb-custom #sb-part-2568 .downArrow span {
+  margin: 0 2%;
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  background: #005b81;
+  clip-path: polygon(0 35%, 25% 35%, 25% 0, 75% 0, 75% 35%, 100% 35%, 50% 100%);
 }
 body .article-body #sb-part-5083.sb-custom-part-m4gts9sjm7em1ukob2g .arrowFlow__area {
   width: 100%;
@@ -257,4 +273,13 @@ body .article-body #sb-part-10214.sb-custom-part-m4j66xx2ghj4ktrmhis .puyoBtn__a
   70%, 100% {
     transform: scale(1.09);
   }
+}
+body .article-body .dad-img img {
+  margin: 0 auto;
+}
+body .article-body .dad-img .bg-yellow {
+  background-color: yellow;
+  padding: 5px 10px;
+  color: rgb(228, 22, 91);
+  font-weight: 900;
 }/*# sourceMappingURL=style.css.map */
