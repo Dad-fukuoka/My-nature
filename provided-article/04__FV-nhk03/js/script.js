@@ -37,3 +37,52 @@ $(window).on('scroll', function () {
 
 })
 
+// ************************* 紙吹雪 *************************
+document.addEventListener("DOMContentLoaded", () => {
+    const target = document.getElementById("offer");
+    let hasTriggered = false; // 一度だけ発動するためのフラグ
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const rect = entry.boundingClientRect;
+
+                // 画面中央に来ているかどうかを判定
+                const isCentered =
+                    rect.top >= window.innerHeight / 3 &&
+                    rect.bottom <= (window.innerHeight / 3) * 2;
+
+                if (isCentered && !hasTriggered) {
+                    // confetti を発動
+                    confetti({
+                        particleCount: 100,
+                        spread: 70,
+                        origin: { y: 0.6 }
+                    });
+                    hasTriggered = true; // 再発動を防ぐ
+                }
+            }
+        });
+    }, {
+        threshold: 0, // 要素の一部が表示されていれば検知
+    });
+
+    observer.observe(target);
+
+    // スクロール時に再評価
+    window.addEventListener("scroll", () => {
+        const rect = target.getBoundingClientRect();
+        const isCentered =
+            rect.top >= window.innerHeight / 3 &&
+            rect.bottom <= (window.innerHeight / 3) * 2;
+
+        if (isCentered && !hasTriggered) {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+            hasTriggered = true; // 再発動を防ぐ
+        }
+    });
+});
