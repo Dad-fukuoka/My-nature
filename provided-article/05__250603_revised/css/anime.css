@@ -1,0 +1,320 @@
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes slide-right {
+  0% {
+    right: -20%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes powan {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.96);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacity2 {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+  30% {
+    opacity: 0.3;
+    filter: blur(20px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+@keyframes crip_left {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
+@keyframes crip_down {
+  0% {
+    clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
+@keyframes open_up {
+  0% {
+    clip-path: inset(0);
+  }
+  100% {
+    clip-path: inset(0 0 100% 0);
+  }
+}
+@keyframes open_down {
+  0% {
+    clip-path: inset(0);
+  }
+  100% {
+    clip-path: inset(100% 0 0 0);
+  }
+}
+.crip_left {
+  opacity: 0;
+}
+
+.anime {
+  animation-play-state: paused;
+}
+.anime.active {
+  animation-play-state: running !important;
+  opacity: 1;
+}
+.anime.fadeIn {
+  opacity: 0;
+  animation: opacity 0.8s forwards linear;
+  animation-play-state: paused;
+}
+.anime.fadeIn.zoomIn {
+  animation: opacity 0.8s forwards linear, zoomIn 0.3s forwards linear;
+  animation-delay: 800ms;
+  animation-play-state: paused;
+}
+.anime.fadeIn2 {
+  opacity: 0;
+  animation: opacity2 0.6s forwards ease-in-out;
+  animation-play-state: paused;
+}
+.anime.fadeIn2.zoomIn {
+  animation: opacity2 0.6s forwards ease-in-out, zoomIn 0.3s forwards linear;
+  animation-delay: 800ms;
+  animation-play-state: paused;
+}
+.anime.crip_left {
+  opacity: 0;
+  animation: opacity 0.1s forwards linear, crip_left 1s forwards ease-in-out;
+  animation-play-state: paused;
+}
+.anime.crip_down {
+  opacity: 0;
+  animation: opacity 0.1s forwards linear, crip_down 1s forwards ease-in-out;
+  animation-play-state: paused;
+}
+.anime.open_up {
+  animation: open_up 0.8s forwards ease-in-out;
+  animation-play-state: paused;
+}
+.anime.open_down {
+  animation: open_down 0.8s forwards ease-in-out;
+  animation-play-state: paused;
+}
+.anime.zoomIn {
+  animation: zoomIn 0.8s forwards linear;
+  animation-play-state: paused;
+}
+.anime.slideUp {
+  opacity: 0;
+  animation: opacity 1.2s forwards linear, slide-up 0.8s forwards ease-in-out;
+  animation-play-state: paused;
+}
+.anime.slideDown {
+  opacity: 0;
+  animation: opacity 1.2s forwards linear, slide-down 0.8s forwards ease-in-out;
+  animation-play-state: paused;
+}
+.anime.slideLeft {
+  opacity: 1 !important;
+  animation: slide-left 0.5s forwards ease-in-out;
+  animation-play-state: paused;
+}
+.anime.slideRight {
+  opacity: 1 !important;
+  animation: slide-right 0.5s forwards ease-in-out;
+  animation-play-state: paused;
+}
+.anime.slideLeft02 {
+  animation: opacity 0.5s forwards linear, slide-left 0.8s forwards ease-in-out;
+  animation-play-state: paused;
+}
+.anime.slideRight02 {
+  animation: opacity 0.5s forwards linear, slide-right 0.8s forwards ease-in-out;
+  animation-play-state: paused;
+}
+.anime.delay {
+  animation-delay: 100ms;
+}
+.anime.delay2 {
+  animation-delay: 200ms;
+}
+.anime.delay3 {
+  animation-delay: 300ms;
+}
+.anime.delay4 {
+  animation-delay: 400ms;
+}
+.anime.delay5 {
+  animation-delay: 500ms;
+}
+.anime.delay6 {
+  animation-delay: 600ms;
+}
+.anime.delay7 {
+  animation-delay: 700ms;
+}
+.anime.delay8 {
+  animation-delay: 800ms;
+}
+.anime.delay9 {
+  animation-delay: 900ms;
+}
+.anime.delay10 {
+  animation-delay: 1000ms;
+}
+.anime.delay11 {
+  animation-delay: 1100ms;
+}
+.anime.delay12 {
+  animation-delay: 1200ms;
+}
+.anime.delay13 {
+  animation-delay: 1300ms;
+}
+.anime.delay14 {
+  animation-delay: 1400ms;
+}
+.anime.delay15 {
+  animation-delay: 1500ms;
+}
+.anime.delay16 {
+  animation-delay: 1600ms;
+}
+.anime.delay17 {
+  animation-delay: 1700ms;
+}
+.anime.delay18 {
+  animation-delay: 1800ms;
+}
+.anime.delay19 {
+  animation-delay: 1900ms;
+}
+.anime.delay20 {
+  animation-delay: 2000ms;
+}
+.anime.delay21 {
+  animation-delay: 2100ms;
+}
+.anime.delay22 {
+  animation-delay: 2200ms;
+}
+.anime.delay23 {
+  animation-delay: 2300ms;
+}
+.anime.delay24 {
+  animation-delay: 2400ms;
+}
+.anime.delay25 {
+  animation-delay: 2500ms;
+}
+.anime.delay26 {
+  animation-delay: 2600ms;
+}
+.anime.delay27 {
+  animation-delay: 2700ms;
+}
+.anime.delay28 {
+  animation-delay: 2800ms;
+}
+.anime.delay29 {
+  animation-delay: 2900ms;
+}
+.anime.delay20 {
+  animation-delay: 3000ms;
+}
+.anime.delay30 {
+  animation-delay: 2000ms;
+}
+
+body .article-body {
+  overflow-y: hidden;
+}
+body .article-body .bg-line01 {
+  width: 175px;
+  height: 45px;
+  background-color: #fadf6d;
+  top: 34.5%;
+  left: 0;
+  opacity: 0;
+}
+@media (max-width: 620px) {
+  body .article-body .bg-line01 {
+    width: 28vw;
+    height: 6.5vw;
+  }
+}
+body .article-body .bg-line02 {
+  width: 380px;
+  height: 23px;
+  background-color: #fadf6d;
+  top: 37.6%;
+  left: 0;
+  opacity: 0;
+}
+@media (max-width: 620px) {
+  body .article-body .bg-line02 {
+    width: 60vw;
+    height: 2.5vw;
+    top: 38.5%;
+  }
+}/*# sourceMappingURL=anime.css.map */
